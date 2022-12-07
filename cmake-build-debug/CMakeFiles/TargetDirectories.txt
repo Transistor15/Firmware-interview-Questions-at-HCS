@@ -1,0 +1,3 @@
+C:/Users/MrDop/CLionProjects/Firmware-interview-Questions-at-HCS/cmake-build-debug/CMakeFiles/Firmware_interview_Questions_at_HCS.dir
+C:/Users/MrDop/CLionProjects/Firmware-interview-Questions-at-HCS/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/MrDop/CLionProjects/Firmware-interview-Questions-at-HCS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
