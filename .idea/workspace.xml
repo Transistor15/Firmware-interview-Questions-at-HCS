@@ -22,6 +22,10 @@
   <component name="ChangeListManager">
     <list default="true" id="68c3f14a-6ba7-44fb-a470-1d2844e82cbd" name="Changes" comment="env setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware_interview_Questions_at_HCS.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware_interview_Questions_at_HCS.dir/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware_interview_Questions_at_HCS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware_interview_Questions_at_HCS.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +109,7 @@
       <updated>1670451433573</updated>
       <workItem from="1670451435477" duration="19935000" />
       <workItem from="1670545015981" duration="479000" />
-      <workItem from="1671106965312" duration="7669000" />
+      <workItem from="1671106965312" duration="9007000" />
     </task>
     <task id="LOCAL-00001" summary="env setup">
       <created>1670451724650</created>
