@@ -1,0 +1,7 @@
+In this example, we define a struct person that has two fields: name and age. We then declare a variable of this type, p, and initialize its fields with values.
+
+Next, we declare a pointer to a struct person and initialize it with the address of the p variable using the & operator. This pointer, ptr, can be used to access the fields of the p structure.
+
+To access the fields of the structure using the pointer, we use the arrow operator (->). This operator allows us to access the fields of the structure that the pointer points to. For example, ptr->name accesses the name field of the p structure, and ptr->age accesses the age field of the p structure.
+
+In this way, pointers can be used to manipulate structures and their fields in C. Pointers can also be useful for passing structures to functions and for organizing data in complex data structures.
