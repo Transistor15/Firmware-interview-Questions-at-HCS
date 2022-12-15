@@ -9,9 +9,10 @@ struct person {
     float Net_worth;
 };
 
-void update_person(struct person *p, int new_age) {
-    // Update the age field of the structure pointed to by p
-    p->age = new_age;
+void update_person(struct person *p) {
+    // Prompt the user for a new age value
+    printf("Enter a new age: ");
+    scanf("%d", &p->age);
 }
 
 int main(void) {
@@ -27,8 +28,7 @@ int main(void) {
     printf("Age: %d\n", ptr_to_Struct_Person->age);
 
     // Call the update_person function, passing the pointer to the Person structure
-    // and a new age value
-    update_person(ptr_to_Struct_Person, 30);
+    update_person(ptr_to_Struct_Person);
 
     // Print the updated age value
     printf("Updated age: %d\n", ptr_to_Struct_Person->age);
