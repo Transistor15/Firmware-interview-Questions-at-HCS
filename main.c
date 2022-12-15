@@ -7,39 +7,31 @@ struct person {
     bool isMarried;
     bool isEmployed;
     float Net_worth;
-
 };
+
+void update_person(struct person *p, int new_age) {
+    // Update the age field of the structure pointed to by p
+    p->age = new_age;
+}
 
 int main(void) {
     // Define a structure variable and initialize its fields
-
-    struct person Person = { "Cephas Kalembo ", 29 ,1,1, 100};
+    struct person Person = { "Cephas Kalembo", 29, false, false, 100 };
 
     // Declare a pointer to a structure and initialize it with the address of the
     // structure variable
     struct person *ptr_to_Struct_Person = &Person;
 
     // Access the fields of the structure using the pointer
+    printf("Name: %s\n", ptr_to_Struct_Person->name);
+    printf("Age: %d\n", ptr_to_Struct_Person->age);
 
-    if(ptr_to_Struct_Person->isMarried && ptr_to_Struct_Person->isEmployed)
-    {
-        printf("my name is %s",ptr_to_Struct_Person->name);
-        printf("i'm %d",ptr_to_Struct_Person->age);
-        printf_s(" years old,");
-        printf(" my unit Net worth is %f",ptr_to_Struct_Person->Net_worth);
-        printf(" , I'm employed working for HERO CONTROL SYSTEMS LLC");
-        printf(" and I'm married with a Son\n");
-    }
-   else
-    {
-        printf("my name is %s",ptr_to_Struct_Person->name);
-        printf("i'm %d",ptr_to_Struct_Person->age);
-        printf_s(" years old");
-        printf(" my unit Net worth is %f",ptr_to_Struct_Person->Net_worth);
-        printf(" , I'm unemployed");
-        printf(" and unmarried\n");
-    }
-if (ptr_to_Struct_Person->isEmployed)
-{}
+    // Call the update_person function, passing the pointer to the Person structure
+    // and a new age value
+    update_person(ptr_to_Struct_Person, 30);
+
+    // Print the updated age value
+    printf("Updated age: %d\n", ptr_to_Struct_Person->age);
+
     return 0;
 }
