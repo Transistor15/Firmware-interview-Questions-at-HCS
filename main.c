@@ -1,37 +1,40 @@
 #include <stdio.h>
-#include <stdbool.h>
+#include <stdlib.h>
 
-struct person {
-    char *name;
-    int age;
-    bool isMarried;
-    bool isEmployed;
-    float Net_worth;
+// Define a structure for the nodes of the linked list
+struct node {
+    int data;
+    struct node *next;
 };
 
-void update_person(struct person *p) {
-    // Prompt the user for a new age value
-    printf("Enter a new age: ");
-    scanf("%d", &p->age);
-}
-
 int main(void) {
-    // Define a structure variable and initialize its fields
-    struct person Person = { "Cephas Kalembo", 29, false, false, 100 };
+    // Create the head node of the linked list and initialize its fields
+    struct node *head = malloc(sizeof(struct node));
+    head->data = 10;
+    head->next = NULL;
 
-    // Declare a pointer to a structure and initialize it with the address of the
-    // structure variable
-    struct person *ptr_to_Struct_Person = &Person;
+    // Create the second node of the linked list and initialize its fields
+    struct node *second = malloc(sizeof(struct node));
+    second->data = 20;
+    second->next = NULL;
 
-    // Access the fields of the structure using the pointer
-    printf("Name: %s\n", ptr_to_Struct_Person->name);
-    printf("Age: %d\n", ptr_to_Struct_Person->age);
+    // Link the head and second nodes together
+    head->next = second;
 
-    // Call the update_person function, passing the pointer to the Person structure
-    update_person(ptr_to_Struct_Person);
+    // Create the third node of the linked list and initialize its fields
+    struct node *third = malloc(sizeof(struct node));
+    third->data = 30;
+    third->next = NULL;
 
-    // Print the updated age value
-    printf("Updated age: %d\n", ptr_to_Struct_Person->age);
+    // Link the second and third nodes together
+    second->next = third;
+
+    // Print the linked list
+    struct node *current = head;
+    while (current != NULL) {
+        printf("%d\n", current->data);
+        current = current->next;
+    }
 
     return 0;
 }
